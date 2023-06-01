@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet"
+        type="text/css" />
+    <style>
+        header {
+            background-color: #ff9400;
+            margin-top: 0;
+            padding: 20px 20px 20px 40px;
+        }
+
+        footer {
+            background-color: #ff9400;
+            margin-top: 0;
+            padding: 20px 20px 20px 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin-left: 40px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Lobster", cursive;
+            color: black;
+        }
+
+        a,
+        div {
+            font-family: "Lobster", cursive;
+            color: black;
+            font-size: large;
+        }
+
+        #scared {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            z-index: 999999;
+        }
+
+        body {
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Завершение регистрации</h1>
+    </header>
+    <hr>
+    <section>
+        <div>
+            <h4>Поздравляем! Регистрация пройдена! Вы всего в одном клике от того чтобы начать работу с сайтом!</h4>
+            <button id="scared">Перейти к сайту</button>
+            <button id="fthis" onclick="getbacktoreg()">Вернуться к регистрации</button>
+            <script src="runningbutton.js"></script>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <h4>&copy; 2023 Misha Sorin. All rights are not reserved.</h4>
+    </footer>
+</body>
